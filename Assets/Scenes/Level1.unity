@@ -1909,7 +1909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 198313c91764af243b422dba6a219193, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alive: 1
+  alive: 0
   maxHealth: 100
   curHealth: 0
   healthBar:

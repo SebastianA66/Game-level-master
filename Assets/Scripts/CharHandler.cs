@@ -22,7 +22,7 @@ public class CharHandler : MonoBehaviour
         {
             curHealth = maxHealth;
         }
-        if(curHealth < 0 || !alive)
+        if(curHealth <= 0 || !alive)
         {
             curHealth = 0;
         }
