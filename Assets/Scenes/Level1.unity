@@ -847,7 +847,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.6509434, g: 0.5983808, b: 0.34082413, a: 1}
+  m_Color: {r: 0.5377358, g: 0.49638835, b: 0.25618547, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -1994,11 +1994,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dash: 0
-  dashOff: 0
-  dashDuration: 0.5
-  dashSpeed: 30
+  dashCool: 0
+  dashDuration: 0.3
+  dashSpeed: 60
   dashTimer: 0
-  dashCooldown: 1
+  dashCooldown: 3
+  currentCooldown: 0
+  onCoolDown: 0
 --- !u!1 &697903187
 GameObject:
   m_ObjectHideFlags: 0
