@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     public bool rotateToMainCamera = false;
     public Transform weapon;
     public float moveSpeed = 10f;
+    public float startSpeed = 10f;
+    public float dashSpeed = 30f;
     public float jumpheight = 10f;
     public Rigidbody rigid;
     private bool isGrounded = true;

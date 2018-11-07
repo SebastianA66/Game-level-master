@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4485677, g: 0.49483782, b: 0.55534875, a: 1}
+  m_IndirectSpecularColor: {r: 0.44856775, g: 0.49483776, b: 0.5553488, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1790,6 +1790,7 @@ GameObject:
   - component: {fileID: 681115097}
   - component: {fileID: 681115096}
   - component: {fileID: 681115095}
+  - component: {fileID: 681115102}
   m_Layer: 9
   m_Name: Player
   m_TagString: Playa
@@ -1826,6 +1827,8 @@ MonoBehaviour:
   rotateToMainCamera: 1
   weapon: {fileID: 0}
   moveSpeed: 15
+  startSpeed: 10
+  dashSpeed: 30
   jumpheight: 7
   rigid: {fileID: 681115095}
   RayDistance: 2
@@ -1979,6 +1982,23 @@ MonoBehaviour:
     m_FixedHeight: 0
     m_StretchWidth: 1
     m_StretchHeight: 0
+--- !u!114 &681115102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 681115094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0447569dbf84cb64a9a3be3fd797bf0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dash: 0
+  dashOff: 0
+  dashDuration: 0.5
+  dashSpeed: 30
+  dashTimer: 0
+  dashCooldown: 1
 --- !u!1 &697903187
 GameObject:
   m_ObjectHideFlags: 0
