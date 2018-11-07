@@ -9,7 +9,7 @@ public class Dash : MonoBehaviour
     public float dashDuration = 0.5f;
     public float dashSpeed = 30f;
     public float dashTimer = 0f;
-    public float dashCooldown = 1f;
+    public float dashCooldown = 1.5f;
     PlayerController controller;
 
     private void Start()
@@ -19,6 +19,7 @@ public class Dash : MonoBehaviour
 
     private void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             Debug.Log("Dash Start");
@@ -40,13 +41,8 @@ public class Dash : MonoBehaviour
                 controller.moveSpeed = controller.startSpeed;                
                 // set your timer to 0
                 dashTimer = 0f;
-                
-                dashOff = true;
-                // Cooldown start 
-                dashCooldown += Time.deltaTime;
-                //
+                                
             }
-           
-        }
+          
     }
 }
